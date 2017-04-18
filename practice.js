@@ -5,15 +5,17 @@
 
   // 2) What are the four rules that govern what the 'this keyword' is bound to and describe each?
 
-      //Answer
+      //Explicit - call, apply, and bind. you tell it 'explicitly' what object you want it to represent when you provide it 'context'
 
   // 3) What is the difference between call and apply?
 
-      //Answer
+      //call takes in multiple arguments, apply takes in one array, full of the same arguments. other than that, they are the same
+      //and work the same way.
 
   // 4) What does .bind do?
 
-      //Answer
+      //binds the function and the 'this' context into a variable. You invoke the variable later, and the context comes along with 
+      //the function.  Arguments are passed in at time of invocation.
 
 
 //Next Problem

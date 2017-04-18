@@ -49,7 +49,7 @@
     this.year = year;
     this.move = 0;
     this.moveCar = function(){
-      this.move += 10;
+      return this.move += 10;
     }
   }
   //Function Invocations Here
@@ -93,16 +93,20 @@ var getMyUsername = function() {
  return this.username;
 };
 
-var userName = getMyUsername(); //Fix this
+var userName = getMyUsername.call(myUser); //Fix this
 
 //Above you're given an object, and  a function. What will the getMyUsername function return?
 //Note(no tests)
-  //Answer Here
+  //it will return the username of whatever 'this' is set to. Whatever context 'this' is used in, it will access that 
+  //object's username property.
+
 
 //In the example above, what is the 'this keyword' bound to when getMyUsername runs?
 
-  //Answer Here
+  //It would be bound to the window.  There is no explicit or implicit context included, so it defaults back to the
+  //browser window.
 
 
-//Fix the getMyUsername invocation (stored in the userName variable, at the bottom of the above code) so that userName will be equal to 'iliketurtles'.
+//Fix the getMyUsername invocation (stored in the userName variable, at the bottom of the above code) so that 
+//userName will be equal to 'iliketurtles'.
 
